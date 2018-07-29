@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="outerform">
+        <p id="description">Survey how do you like to fish for pike!</p>
+
+        <form action="#" id="survey-form" action="POST">
+            <div id="entries">
+                <div id="labels">
+                    <label for="name" id="name-label">* Name: </label>
+                </div>
+                <div id="inputs">
+                    <input class="inputfield" type="text" id="name" name="name" required placeholder="Enter your name" autofocus>
+                </div>
+            </div>
+            <div id="entries">
+                <div id="labels">
+                    <label for="email" id="email-label">* Email: </label>
+                </div>
+                <div id="inputs">
+                    <input class="inputfield" type="email" name="email" id="email" required placeholder="Enter your email adress" autofocus>
+                </div>
+            </div>
+            <div id="entries">
+                <div id="labels">
+                    <label for="age" id="number-label">* Age: </label>
+                </div>
+                <div id="inputs">
+                    <input class="inputfield" type="number" name="age" min="1" max="100" id="number" required placeholder="age" autofocus>
+                </div>
+            </div>
+            <div id="entries">
+                <div id="labels">
+                    <label for="favourite method">Favourite pike fishing method: </label>
+                </div>
+                <div id="inputs">
+                    <select name="favourite" id="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="vertical">Vertical jigging</option>
+                        <option value="pelagic">Pelagic casting</option>
+                        <option value="trolling">Trolling big lures</option>
+                        <option value="casting">Casting</option>
+                        <option value="ismete">Ismete</option>
+                    </select>
+                </div>
+            </div>
+            <div id="entries">
+                <div id="labels">
+                    <label for="newmethod">Would you be ready to try a new method? </label>
+                </div>
+                <div id="inputs">
+                    <ul style="list-style: none">
+                        <li class="radio">
+                            <label for="definitely">Definitely
+                                <input type="radio" name="radio-buttons" value="1" class="radioChoice">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label for="try">Maybe I should try
+                                <input type="radio" name="radio-buttons" value="2" class="radioChoice">
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label for="stupid">Don't be stupid
+                                <input type="radio" name="radio-buttons" value="3" class="radioChoice">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="entries">
+                <div id="labels">
+                    <label for="lurecolor">Your favourite lure color? </label>
+                </div>
+                <div id="inputs">
+                    <ul style="list-style: none">
+                        <li class="checkbox">
+                            <label for="darkcolors">Dark colors
+                                <input type="checkbox" name="colors" value="1" class="radioChoice">
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label for="brightcolors">Bright colors
+                                <input type="checkbox" name="colors" value="2" class="radioChoice">
+                            </label>
+                        </li>
+                        <li class="checkbox">
+                            <label for="naturalcolors">Natural colors
+                                <input type="checkbox" name="colors" value="3" class="radioChoice">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="entries">
+                <div id="labels">
+                    <label for="lurecolor">Share your view </label>
+                </div>
+                <div id="inputs">
+                    <textarea name="comment" cols="30" rows="10" id="comments" class="inputfield" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
